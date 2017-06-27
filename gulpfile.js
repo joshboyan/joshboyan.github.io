@@ -1,21 +1,21 @@
 var gulp = require('gulp'),
-  sass = require('gulp-sass'),
-  autoprefixer = require('gulp-autoprefixer'),
-  browserSync = require('browser-sync').create(),
-  uglify = require('gulp-uglify'),
-  minify = require('gulp-minify-html'),
-  imgmin = require('gulp-imagemin'),
-  concat = require('gulp-concat'),
-  jshint = require('gulp-jshint'),
-  babel = require('gulp-babel'),
-  panini = require('panini'),
-  sitemap = require('gulp-sitemap'),
-  replace = require('gulp-replace'),
-  browserify = require('gulp-browserify'),
-  source = require('vinyl-source-stream'),
-  buffer = require('vinyl-buffer'),
-  sourcemaps = require('gulp-sourcemaps'),
-  filenames = require("gulp-filenames");
+    sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    browserSync = require('browser-sync').create(),
+    uglify = require('gulp-uglify'),
+    minify = require('gulp-minify-html'),
+    imgmin = require('gulp-imagemin'),
+    concat = require('gulp-concat'),
+    jshint = require('gulp-jshint'),
+    babel = require('gulp-babel'),
+    panini = require('panini'),
+    sitemap = require('gulp-sitemap'),
+    replace = require('gulp-replace'),
+    browserify = require('gulp-browserify'),
+    source = require('vinyl-source-stream'),
+    buffer = require('vinyl-buffer'),
+    sourcemaps = require('gulp-sourcemaps'),
+    filenames = require("gulp-filenames");
 
 var jsSources = ['./components/js/*.js']; //may need to dictate specific concatenation order
 var sassSources = ['./components/sass/*.scss'];
@@ -242,6 +242,6 @@ Default commands
 
 **************/
 
-gulp.task('default', ['js', 'sass', 'imgmin', 'manifest', 'panini', 'serviceWorker', 'browser-sync', 'watch']);
+gulp.task('default', ['js', 'sass', 'imgmin', 'manifest', 'panini', 'browser-sync', 'watch']);
 
 gulp.task('dist', ['sassDist', 'jsDist', 'swDist', 'paniniDist', 'imgminDist', 'manifestDist', 'serviceWorkerDist', 'sitemap']);

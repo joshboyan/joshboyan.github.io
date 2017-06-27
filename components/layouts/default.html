@@ -17,43 +17,41 @@
 	<link rel="icon" type="image/ico" href="img/logo.ico">
 	<link type="text/plain" rel="author" href="humans.txt" />
 	<!-- Disable tap highlight on IE -->
-    <meta name="msapplication-tap-highlight" content="no">
+	<meta name="msapplication-tap-highlight" content="no">
 
-    <!-- Web Application Manifest -->
-    <link rel="manifest" href="manifest.json">
+	<!-- Web Application Manifest -->
+	<link rel="manifest" href="manifest.json">
 
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="SVG Weather">
-    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="SVG Weather">
+	<link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="SVG Weather">
-    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="SVG Weather">
+	<link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
 
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#2F3BA2">
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#2F3BA2">
 
-    <!-- Color the status bar on mobile devices -->
-    <meta name="theme-color" content="#000000">
+	<!-- Color the status bar on mobile devices -->
+	<meta name="theme-color" content="#000000">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="css/styles.css" rel="stylesheet">
 	<!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 	<script>
-
 		 if(location.hostname !== "localhost") {
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'Enter Your Analytics code here', 'auto'); ga('send', 'pageview');
 		 } else {
 			console.log('dev mode detected, don\'t track view')
 		 }
-
-
-		</script>
+	</script>
 </head>
 <body>
 	<header role="banner">
@@ -66,6 +64,16 @@
 {{> body}}
 		
 	</footer>
+	<script
+		src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous">
+	</script>
+	<script 
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+		crossorigin="anonymous">
+	</script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>
