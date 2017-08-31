@@ -217,4 +217,4 @@ Default commands
 
 gulp.task('default', ['js', 'sass', 'imgmin', 'manifest', 'panini', 'browser-sync', 'watch']);
 
-gulp.task('dist', ['sassDist', 'jsDist', 'swDist', 'paniniDist', 'imgminDist', 'manifestDist', 'serviceWorkerDist', 'sitemap']);
+gulp.task('dist', ['sassDist', 'jsDist', 'swDist', 'paniniDist', 'imgminDist', 'manifestDist', 'sitemap']);
