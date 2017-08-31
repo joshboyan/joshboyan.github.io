@@ -21,33 +21,6 @@ var jsSources = ['./components/js/*.js']; //may need to dictate specific concate
 var sassSources = ['./components/sass/*.scss'];
 var htmlSources = ['./components/**/*.html'];
 
-/***************
-
-Automatically generate service worker with all assets 
-
-***************/
-
-gulp.task('serviceWorker', function(callback) {
-  var path = require('path');
-  var swPrecache = require('sw-precache');
-  var rootDir = './builds/dev';
-
-  swPrecache.write(path.join(rootDir, 'sw.js'), {
-    staticFileGlobs: [rootDir + '/**/*.{js,html,css,png,jpg,gif}'],
-    stripPrefix: rootDir
-  }, callback);
-});
-
-gulp.task('serviceWorkerDist', function(callback) {
-  var path = require('path');
-  var swPrecache = require('sw-precache');
-  var rootDir = './builds/dist';
-
-  swPrecache.write(path.join(rootDir, 'sw.js'), {
-    staticFileGlobs: [rootDir + '/**/*.{js,html,css,png,jpg,gif}'],
-    stripPrefix: rootDir
-  }, callback);
-});
 
 /**************
 
