@@ -1,31 +1,40 @@
-//This manifest is for adding icons to mobile users homescreens
+/***************
+
+This file is what lets your app or website icon be added to mobile 
+homescreens and creates a splash screen to simulate native app 
+experience.
+
+All comments must be deleted for it to work.
+Validate at: https://manifest-validator.appspot.com/
+
+***************/
 {
-  "name": "SVG Weather", // Nme or your site or app
-  "short_name": "SVG Weather", // Name shown on user homescreen
+  "name": "SVG Weather",
+  "short_name": "SVG Weather",
   "icons": [{
-        "src": "images/touch/icon-128x128.png",
+        "src": "img/icon-128x128.png",
         "sizes": "128x128",
         "type": "image/png"
       }, {
-        "src": "images/touch/apple-touch-icon.png",
+        "src": "img/apple-touch-icon.png",
         "sizes": "152x152",
         "type": "image/png"
       }, {
-        "src": "images/touch/ms-touch-icon-144x144.png",
+        "src": "img/ms-touch-icon-144x144.png",
         "sizes": "144x144",
         "type": "image/png"
       }, {
-        "src": "images/touch/chrome-touch-icon-192x192.png",
+        "src": "img/chrome-touch-icon-192x192.png",
         "sizes": "192x192",
         "type": "image/png"
       },
     {
-      "src": "images/touch/large-icon-252x252.png",
+      "src": "img/large-icon-252x252.png",
       "sizes": "252x252",
       "type": "image/png"
     }],
-  "start_url": "/index.html?homescreen=1",
-  "display": "standalone",
-  "background_color": "#3E4EB8",
-  "theme_color": "#000000"
+  "start_url": "/?utm_source=homescreen", // Distinguishes if user got to app from homescreen icon or URL
+  "display": "standalone", // Determines if browser navigation is shown - standalone or fullscreen
+  "background_color": "#303F9F", // Passes background color to browser before CSS is parsed
+  "theme_color": "#303F9F" // Sets custom color for the device search bar
 }

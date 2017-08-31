@@ -21,7 +21,7 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
-
+/**
 $(document).scroll(function() {
 			  var y = $(this).scrollTop();
 			  if (y > 500) {
@@ -30,3 +30,4 @@ $(document).scroll(function() {
 			    $('.bottom-cta').slideUp();
 			  }
 			});
+      */

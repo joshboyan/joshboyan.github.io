@@ -8,7 +8,17 @@ var filesToCache = [
 	'/index.html',
 	'/css/styles.css',
 	'/js/scripts.js',
-	'/img/favicon.png'
+  'img/anythings-pastable.png',
+  'img/book-finder.png',
+  'img/fifteen.png',
+  'img/github-icon.png',
+  'img/josh-boyan.jpg',
+  'img/linkedin.png',
+  'img/minframe.png',
+  'img/npm.png',
+  'img/resume.png',
+  'img/stack-overflow.png',
+  'img/weather-app.png'
 	];
 // Install initial service worker in the browser
 self.addEventListener('install', function(e) {
