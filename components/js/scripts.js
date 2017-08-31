@@ -21,13 +21,13 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
-/**
+
 $(document).scroll(function() {
-			  var y = $(this).scrollTop();
-			  if (y > 500) {
-			    $('.bottom-cta').slideDown();
-			  } else {
-			    $('.bottom-cta').slideUp();
-			  }
-			});
-      */
+  var y = $(this).scrollTop();
+  if (y > 500) {
+    $('.bottom-cta').slideDown();
+  } else {
+    $('.bottom-cta').slideUp();
+  }
+});
+      

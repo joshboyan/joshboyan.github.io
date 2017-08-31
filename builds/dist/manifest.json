@@ -9,8 +9,8 @@ Validate at: https://manifest-validator.appspot.com/
 
 ***************/
 {
-  "name": "SVG Weather",
-  "short_name": "SVG Weather",
+  "name": "Josh Boyan - Developer",
+  "short_name": "Josh Boyan",
   "icons": [{
         "src": "img/icon-128x128.png",
         "sizes": "128x128",
