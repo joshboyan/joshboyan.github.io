@@ -24,7 +24,7 @@ if ('serviceWorker' in navigator) {
 
 $(document).scroll(function() {
   var y = $(this).scrollTop();
-  if (y > 500) {
+  if (y > 2500) {
     $('.bottom-cta').slideDown();
   } else {
     $('.bottom-cta').slideUp();

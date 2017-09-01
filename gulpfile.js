@@ -99,9 +99,9 @@ gulp.task('jsDist', function() {
       presets: ['es2015']
     }))
     .pipe(concat('scripts.js'))
-    .pipe(browserify({
-      insertGlobals: true
-    }))
+    //.pipe(browserify({
+     // insertGlobals: true
+    //}))
     .pipe(uglify())
     .pipe(gulp.dest('builds/dist/js'))
 });
