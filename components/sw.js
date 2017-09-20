@@ -1,7 +1,7 @@
 // Once your project goes live this variable needs to be 
 // incrememnted to signal the service worker needs to be updated
 // any time you make a change to any file tha tis cached
-var cacheName = 'project-cache-v1';
+var cacheName = 'project-cache-v2';
 // List of static assets ou want to cache
 var filesToCache = [
 	'/',
@@ -9,7 +9,9 @@ var filesToCache = [
 	'/css/styles.css',
 	'/js/scripts.js',
   'img/anythings-pastable.png',
+  'img/appointment-ledger.png',
   'img/book-finder.png',
+  'img/devskills-api.png',
   'img/fifteen.png',
   'img/github-icon.png',
   'img/josh-boyan.jpg',
